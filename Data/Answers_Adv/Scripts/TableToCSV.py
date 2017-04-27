@@ -34,7 +34,7 @@ print(field_list) # Do this to make sure it works
 data = []
 with arcpy.da.SearchCursor(input_table, field_list) as cursor:
     for row in cursor:
-        data.append(list(row)) # Added a list function to conver the tuple
+        data.append(list(row)) # Added a list function to convert the tuple
 
 print(data[:10]) # Print the first 10 rows to check the data
 
